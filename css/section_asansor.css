@@ -1,0 +1,43 @@
+#asansor{
+    position: relative;
+}
+#asansor h1{
+    font-size: 25px;   
+}
+#asansor img{
+    text-align: center;
+}
+.asansor_price{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    z-index: 500;
+}
+
+#website{
+    position: relative;
+}
+#website h1{
+    font-size: 25px;   
+}
+#website img{
+    height: 48%;
+    width: 100%;
+}
+.website_price{
+    position: absolute;
+    top: 7%;
+    left: 2%;
+    z-index: 500;
+}
+
+.kurumsal-mail{
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    z-index: 500;
+}
+
+.card-body{
+    padding-right: 0;
+}

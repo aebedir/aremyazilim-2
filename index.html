@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section_egitim.css">    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/section_form.css">
+    <link rel="stylesheet" href="css/section_asansor.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">    
+    <title>Arem Yazılım</title>
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HWQGTYLBV">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4HWQGTYLBV');
+    </script>
+</head>
+<body>
+    <!-- Navigasyon barı -->
+    <header>
+        <div class="header-top">
+            <div class="container d-flex align-items-center justify-content-end">            
+                <div class="phone-mail">
+                    <a href="tel:05315400826" class="pe-3"><i class="fa-solid fa-phone pe-2"></i>+90 531 540 0826</a>
+                    <a href="mailto:info@aremyazilim.com"><i class="fa-solid fa-at pe-2"></i>info@aremyazilim.com</a>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container p-2">
+                    <a class="navbar-brand text-white ps-md-5" href="index.html">Arem Yazılım</a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Arem Yazılım</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                            <a class="nav-link active" id="1" aria-current="page" onClick="add(this.id)" href="index.html">Anasayfa</a>
+                            </li>
+                            <li class="nav-item">
+                            <p class="nav-link" style="cursor: pointer;" id="2" href="#" onClick="add(this.id)">Hizmetlerimiz</p>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="3" href="#" onClick="add(this.id)">Hakkımızda</a>
+                            </li>                            
+                            <li class="nav-item">
+                                <a class="nav-link"  id="4"  href="bize-ulasin.html" onClick="add(this.id)" >Bize Ulaşın</a>
+                            </li> 
+                            <div class="phone-mail d-none">
+                                <hr>
+                                <a href="tel:05315400826" class="pe-3"><i class="fa-solid fa-phone pe-2"></i>+90 531 540 0826</a>
+                                <hr>
+                                <a href="mailto:info@aremyazilim.com"><i class="fa-solid fa-at pe-2"></i>info@aremyazilim.com</a>
+                            </div>         
+                        </ul>                             
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Eğitimlerimiz açılır kapanır sekme -->
+    <section class="d-flex align-items-start justify-content-evenly d-none" id="egitim">
+        <div class="asansor">
+            <h4><a href="#asansor" class="btn btn-primary">Asansör Avan Proje Çizimleri</a></h4>
+            <p>Gebze, Darıca, Çayırova Belediyeleri Başta Olmak Üzere Asansör Avan Proje Çizim Hizmetleri</p>
+            <ul>
+                <li>Hızlı ve Başarılı Proje Tasarımları</li>
+                <li>İlgili Belediyeye Uygun Projeler</li>
+                <li>Proje Onay Takibi</li>
+                
+            </ul>
+        </div>
+        <div class="webtasarım">
+            <h4><a href="#website" class="btn btn-primary">Kurumsal Web Sitesi Çözümleri</a></h4>
+            <p>Anahtar Teslim Kurumsal Web Siteniz İle Şirketinizi Daha Çok Müşteriye Ulaştırın.</p>
+            <ul>
+                <li>Yüz Yüze veya Online Olarak Yapacağımız Görüşmeler ile Web Sitesi Genel Planını Belirliyoruz.</li>
+                <li>Sizden Almış Olduğumuz Bilgiler Doğrultusunda Web Sitenizin Çalışmalarına Başlıyoruz.</li>
+                <li>Web Sitemiz Sizlere Sunuma ve Yayına Hazırdır.</li>
+            </ul>
+        </div>
+        <div class="seo">
+            <h4><a href="" class="btn btn-primary">S.E.O Hizmeti</a></h4>
+            <p>Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun. Doğru Adımları Atarak Sitenizi Arama Motorlorunda Üst Sıralara Taşımayı Hedefliyoruz.</p>
+        </div>
+    </section>
+
+    <!-- Yukarı Çık Butonu -->  
+    <button class="up border-0 fs-1 d-none"><i class="fa-solid fa-circle-arrow-up fa-bounce"></i></button>
+
+    <main class="main">
+        
+            <div class="animation_text ps-2">
+                <h2>
+                  <span class="typewrite" data-period="2000" data-words='[ " Deneyimli Mühendis Kadromuz İle Asansör Avan Projesi Konusunda Hızlı ve Başarılı Çözümler İle Memnuniyet Garantisi", "Kurumsal Web Sitesi Tasarımları İle Şirketinizi Dijital Dünya İle Tanıştırıyoruz. ", " 10 Yılı Aşkın Sektör Tecrübemiz Sayesinde Her Geçen Gün Başarılarımızı Daha İleri Seviyelere Taşımaya Devam Ediyoruz."]'></span>     </h2>                
+            </div>
+            <div class="animation_btn ps-2">
+                <div data-aos="fade-left"  
+                    data-aos-delay="2800" class="text-white ps-2 mt-3">
+                    
+                </div>  
+                <div data-aos="fade-left"  
+                    data-aos-delay="2000">
+                    <button class="btn getInfo"><a class="text-decoration-none text-white" href="tel:05315400826">Asansör Avan Projesi İçin Tıklayınız...</a></button>
+                </div>
+                <div data-aos="fade-left" class="mt-2"  
+                    data-aos-delay="3000">
+                    <button class="btn getInfo"><a class="text-decoration-none text-white" href="tel:05315400826">Kurumsal Web Sitesi Tasarımı İçin Tıklayınız...</a></button>
+                </div>
+            </div>
+            <!-- Ana ekran sağ taraf resim -->
+            <div class="logo">
+                <img src="img/pngwing.com.png" width="400px" alt="">
+            </div>
+            
+
+        
+
+        <!-- <div class="owl">
+            <div class="owl-carousel  container">
+                <div class="ikon1"><a href="" ><img src="img/sertifika1.png" alt=""></a></div>
+                <div class="ikon2"><a href="" ><img src="img/sertifika2.jpeg" alt=""></a></div>
+                <div class="ikon3"><a href="" ><img src="img/sertifika3.png" alt=""></a></div>
+                <div class="ikon4"><a href="" ><img src="img/sertifika4.jpeg" alt=""></a></div>
+                <div class="ikon5"><a href="" ><img src="img/sertifika5.png" alt=""></a></div>                    
+            </div>
+        </div>   -->
+    </main> 
+  
+
+    <section id="asansor" class="container mt-5"> 
+        <div class="text-center">
+            <h1 class="btn btn-secondary">Asansör Proje Hizmetleri</h1>
+        </div> 
+        
+        <div class="asansor_price">
+            <h5 class="btn btn-danger"><a href="tel:05315400826" class="text-decoration-none text-white">1000 TL'den Başlayan Fiyatlarla...</a></h5>
+        </div>
+             
+        <div class="card mb-3">
+            <div class="row g-0">              
+              <div class="col-md-8 order-1">
+                <div class="card-body">
+                  <h5 class="card-title">Asansör Proje Hizmetleri</h5>
+                  <p class="card-text"><b>Gebze, Darıca ve Çayırova Bölgelerinde Aynı Gün Teslim Asansör Avan Projeleri Hizmeti Vermekteyiz.</b></p>
+                  <div>
+                    <ul>
+                        <li>
+                            <p>Gebze belediyesi projeleri gebze belediyesinin yapmış olduğu e-belediye sisteminden yüklenmektedir.</p>
+                            <p>Teslim Edilmesi Gereken Evraklar (Mail Yoluyla)</p>
+                            <ul>
+                                <li>Onaylı Mimari Proje</li>
+                                <li>Proje Kontrol Formu (Yapı Denetim Firmalarından Temin Edilecek)</li>
+                                <li>Yapı Denetim Denetçi T.C Kimlik Numaraları (Elektrik ve Mekanik)</li>
+                                <li>Müteahhit ve Mal Sahibi İsim Soyisim ve Telefon Numaraları</li>
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>                  
+                  <hr>
+                  <div>
+                    <ul>
+                        <li>
+                            <p>Çayırova belediyesi projeleri öncelikle avan proje dosyası hazırlanarak belediyeye teslim edilir. Daha sonra mail yoluyla proje onaylatıldıktan sonra ozalit çıktısı alınarak mimara teslim edilir.</p>
+                            <p>Teslim Edilmesi Gereken Evraklar (Mail Yoluyla)</p>
+                            <ul>
+                                <li>Onaylı Mimari Proje</li>
+                                <li>Asansör Avan Projesi Hizmet Sözleşmesi (Bizim Tarafımızdan Hazırlanacak)</li>                            
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>
+                  <hr>
+                  <div>
+                    <ul>
+                        <li>
+                            <p>Darıca belediyesi projeleri çizildikten sonra ozalit çıktısı alınarak belediyenin istemiş olduğu evraklar ile birlikte mimara teslim edilir.</p>
+                            <p>Teslim Edilmesi Gereken Evraklar (Mail Yoluyla)</p>
+                            <ul>
+                                <li>Onaylı Mimari Proje</li>                                                            
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 order-2">
+                <img src="img/project.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="website" class="container mt-5">
+        <div class="text-center">
+            <h1 class="btn btn-secondary">Kurumsal Web Sitesi Hizmetleri</h1>
+        </div>  
+        
+        <div class="website_price">
+            <h5 class="btn btn-danger"><a href="tel:05315400826" class="text-decoration-none text-white">2800 TL'den Başlayan Fiyatlarla...</a></h5>
+        </div>
+
+        <div class="kurumsal-mail">
+            <h5 class="btn btn-success">Kurumsal Mail Hediyeli</h5>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/background.jpg" class="img-fluid rounded-start" alt="...">
+                <hr>
+                <img src="img/website.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Kurumsal Web Sitesi Hizmetleri </h5>
+                  <p class="card-text"><b>Kurumsal Web Siteniz İle Firmanızı İnternet Dünyasına Taşıyarak Daha Fazla Müşteriye Ulaşmanızı Sağlıyoruz</b></p>
+                  <p><b>3 Adet Kurumsal Mail Hediyesiyle (info@sirket.com.tr)</b></p>
+                  
+                  <div>
+                    <ul>
+                        <li>
+                            <p>Kurumsal Web Sitesi Öncesi Yol Haritası Çizimi (Tema Seçimi v.b.)</p>
+                            <p>Tarafımıza İletilmesi Gereken Bİlgiler (Mail Yoluyla)</p>
+                            <ul>
+                                <li>Firmanız İletişim Bilgileri</li>
+                                <li>Firma Logosu (PNG Formatında , İstenildiği Takdirde Logo Tasarımı)</li>
+                                <li>Firmanız Misyon ve Vizyon Metin İçerikleri</li>
+                                <li>Firmanız Tarafında Sunulan Hizmetler Listesi</li>
+                                <li>Firmanız Hakkımızda Yazısı</li>
+                                <li>Web Sitenizde Bulunmasını İstedğiniz Dosya ve Görseller</li>
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>     
+                  <hr>
+                  <div>
+                    <ul>
+                        <li>
+                            <p>İkinci Aşamada Taslak Kontrolü Yapıyoruz.</p>
+                            <p>Hazırlamış olduğumuz web sitenizi yayınlanmadan önce son kontrolleri yapıyoruz. Eklenmesini veya değiştirilmesini istediğiniz yerleri revize ediyoruz.</p>                            
+                        </li>
+                      </ul>
+                  </div>
+                  <hr>
+                  <div>
+                    <ul>
+                        <li>
+                            <p>Son Olarak Firmanıza Uygun Domain Adresi Seçimi Yaparak Web Sitemizi Yayına Alıyoruz.</p>
+                            <p>Domain ve Hosting Hizmetleri Fiyata Dahil Değildir.2023 Yılı İçerisind Ortalama Domain ve Hosting İşlemleri 1000-1500 TL Civarındadır.(Yıllık Olarak Yenilenmesi Gerekir.)  <p>                            
+                        </li>
+                        <ul>
+                            <li>Domain Nedir ?
+                                <p>Domain bir web sitesinin adresini belirleyen, internette benzersiz bir kimlik numarasıdır. Örneğin, Google'ın alan adı "google.com" dur. Bir domain adı, bir ana bilgisayarda veya sunucuda barındırılan bir web sitesinin adıdır ve bu nedenle internet kullanıcıları tarafından tarayıcıda girilebilir.</p>
+                            </li>
+                            <li>Hosting Nedir ?
+                                <p>Hosting bir web sitesinin internet üzerinde yayınlanması için gerekli olan hizmetleri sağlayan bir hizmettir. Web sitesi dosyalarının saklanması, sunuculara yüklenmesi ve internete bağlanması için gerekli altyapıyı sağlar. Hosting hizmetleri, genellikle bir sunucu üzerinde barındırılan bir dizi web sitesi için paylaşılan veya özel olarak kiralanmış sunucular olarak sunulur.</p>
+                            </li>
+                        </ul>
+                      </ul>
+                  </div>             
+                  
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="seo">
+
+    </section>
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+    /* paste this line in verbatim */
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    /* customize formbutton below*/     
+    formbutton("create", {
+        action: "https://formspree.io/f/mgebddqo",
+        title: "Size Nasıl Yardımcı Olabilirim ?",
+        fields: [
+        { 
+            type: "email", 
+            label: "E-mail:", 
+            name: "email",
+            required: true,
+            placeholder: "abc@email.com"
+        },
+        {
+            type: "textarea",
+            label: "Mesaj:",
+            name: "message",
+            placeholder: "Mesajınızı Yazınız",
+        },
+        { type: "submit" }      
+        ],
+        styles: {
+        title: {
+            backgroundColor: "red"
+        },
+        button: {
+            backgroundColor: "red"
+        }
+        }
+    });
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.js"></script>
+ 
+</body>
+</html>

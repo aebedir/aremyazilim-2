@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section_egitim.css">    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/section_form.css">
+    <link rel="stylesheet" href="css/section_asansor.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">  
+    <title>Arem Yazılım/Bize Ulaşın</title>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HWQGTYLBV">
+        </script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-4HWQGTYLBV');
+        </script>
+</head>
+<body>
+    <!-- Navigasyon barı -->
+    <header>
+        <div class="header-top">
+            <div class="container d-flex align-items-center justify-content-end">            
+                <div class="phone-mail">
+                    <a href="tel:05315400826" class="pe-3"><i class="fa-solid fa-phone pe-2"></i>+90 531 540 0826</a>
+                    <a href="mailto:info@aremyazilim.com"><i class="fa-solid fa-at pe-2"></i>info@aremyazilim.com</a>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container p-2">
+                    <a class="navbar-brand text-white ps-md-5" href="index.html">Arem Yazılım</a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Arem Yazılım</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                            <a class="nav-link " id="1" aria-current="page" onClick="add(this.id)" href="index.html">Anasayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" style="cursor: pointer;" id="2" href="#" onClick="add(this.id)">Hizmetlerimiz</p>
+                                </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="3"  onClick="add(this.id)">Hakkımızda</a>
+                            </li>                            
+                            <li class="nav-item">
+                                <a class="nav-link active"  id="4" style="cursor: pointer;"  onClick="add(this.id)" >Bize Ulaşın</a>
+                            </li> 
+                            <div class="phone-mail d-none">
+                                <hr>
+                                <a href="tel:05315400826" class="pe-3"><i class="fa-solid fa-phone pe-2"></i>+90 531 540 0826</a>
+                                <hr>
+                                <a href="mailto:info@aremyazilim.com"><i class="fa-solid fa-at pe-2"></i>info@aremyazilim.com</a>
+                            </div>         
+                        </ul>                             
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Eğitimlerimiz açılır kapanır sekme -->
+     <section class="d-flex align-items-start justify-content-evenly d-none" id="egitim">
+        <div class="asansor">
+            <h4><a href="index.html#asansor" class="btn btn-primary">Asansör Avan Proje Çizimleri</a></h4>
+            <p>Gebze, Darıca, Çayırova Belediyeleri Başta Olmak Üzere Asansör Avan Proje Çizim Hizmetleri</p>
+            <ul>
+                <li>Hızlı ve Başarılı Proje Tasarımları</li>
+                <li>İlgili Belediyeye Uygun Projeler</li>
+                <li>Proje Onay Takibi</li>
+                
+            </ul>
+        </div>
+        <div class="webtasarım">
+            <h4><a href="index.html#website" class="btn btn-primary">Kurumsal Web Sitesi Çözümleri</a></h4>
+            <p>Anahtar Teslim Kurumsal Web Siteniz İle Şirketinizi Daha Çok Müşteriye Ulaştırın.</p>
+            <ul>
+                <li>Yüz Yüze veya Online Olarak Yapacağımız Görüşmeler ile Web Sitesi Genel Planını Belirliyoruz.</li>
+                <li>Sizden Almış Olduğumuz Bilgiler Doğrultusunda Web Sitenizin Çalışmalarına Başlıyoruz.</li>
+                <li>Web Sitemiz Sizlere Sunuma ve Yayına Hazırdır.</li>
+            </ul>
+        </div>
+        <div class="seo">
+            <h4><a href="" class="btn btn-primary">S.E.O Hizmeti</a></h4>
+            <p>Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun. Doğru Adımları Atarak Sitenizi Arama Motorlorunda Üst Sıralara Taşımayı Hedefliyoruz.</p>
+        </div>
+    </section>
+
+    <div class="uyari d-none">
+        <h5 class="alert alert-success">Form Başarıyla Gönderildi.</h5>
+    </div>
+
+     <section class="formInfo ">
+        <form name="form"  action="https://formspree.io/f/mgebddqo"
+        method="POST"> 
+                       
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Adınız : </span>
+                <input type="text" class="form-control" placeholder="Adınızı giriniz..." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Soyadınız : </span>
+                <input type="text" class="form-control" placeholder="Soyadınızı giriniz... " aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+              
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Mail Adresiniz : </span>
+                <input type="email" class="form-control" placeholder="Mail adresinizi giriniz..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text email" id="basic-addon2">@example.com</span>
+            </div>
+
+            <div class="input-group mb-3">
+                <span  class="input-group-text" id="basic-addon1">Almak İstediğiniz Hizmet : </span>
+                <select name="hizmet" class="form-select" id="inputGroupSelect01">
+                <option selected>Seçiniz...</option>
+                <option value="1">Asansör Avan Projesi</option>
+                <option value="2">Kurumsal Web Site Hizmeti</option>
+                <option value="3">S.E.O Hizmeti</option>                
+                </select> 
+            </div>
+            <div class="input-group mb-3 asansorr d-none" >
+                <span class="input-group-text" id="basic-addon2">Asansör Avan Belediye Seçimi :</span>
+                <select class="form-select" id="inputGroupSelect02">
+                <option selected>Seçiniz...</option>
+                <option value="1">Gebze</option>
+                <option value="2">Darıca</option>
+                <option value="2">Çayırova</option>
+                <option value="2">Diğer</option>
+                </select>
+            </div> 
+
+            <div class="pt-2 button formgonder">
+                <button class="btn btn-danger" type="submit">Formu Gönder</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
