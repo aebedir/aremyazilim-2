@@ -1,5 +1,5 @@
 .main{
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)),url("../img/background2.jpg");
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)),url("../img/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -33,6 +33,7 @@
     border-radius: 20px;   
     border: none; 
     transition:all .5s ease-in-out !important;
+    
     
 }
 .getInfo:hover {

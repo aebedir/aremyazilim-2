@@ -27,15 +27,16 @@
 }
 
 /* header bottom css */
+
 .navbar{
     background-image: linear-gradient(to right, black, #414b59) ;
 }
 .nav-item{
-    padding:7px 15px;
+    padding:7px 15px 0 15px;
 }
 .nav-link{
     color: white;
-    padding-right: 15px;
+    padding-right: 15px;    
 }
 .nav-link:hover{
     color: white;
@@ -77,4 +78,57 @@
     background-color: black;
     border-radius:10px;
     padding:7px 13px !important;
+}
+.active2{
+    color: orange !important;
+}
+
+
+/* açılır kapanır header */
+.secret_navbar{
+    background-color: white ;  
+    position: fixed;  
+    width: 100%; 
+    z-index: 1000;
+}
+.nav-link2 {
+    text-decoration: none !important;
+    color:black;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.nav-item2{
+    list-style: none;
+}
+.navbar2{       
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-item2 img{
+    width: 150px;
+}
+
+/*nav-link Hover efekt similasyonu */
+.navbar2{
+    margin-bottom: 0;
+}
+.nav-link2{   
+    padding-right: 15px;    
+}
+.nav-link2:hover{
+    opacity: 0.8;
+    color: black;
+}
+.nav-link2:after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    transition: width .3s ease-in-out;
+}
+.nav-link2:hover:after {
+    width: 100%;
 }

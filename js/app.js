@@ -4,6 +4,12 @@ function add(id){
     document.getElementById(id).classList.add("active")
 }
 
+function add2(id){
+  let active2 = document.getElementsByClassName("active2")
+  active2[0].classList.remove("active2");
+  document.getElementById(id).classList.add("active2")
+}
+
 // Eğitimlerimiz açılır sayfa
 $("#2").mouseenter(function(){
     document.querySelector("#egitim").classList.remove("d-none")        
@@ -137,13 +143,26 @@ jQuery(document).ready(function() {
     }
   });
 
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
+      document.querySelector(".secret_navbar").classList.remove("d-none")
+    } else {
+      document.querySelector(".secret_navbar").classList.add("d-none")
+    }
+  }); 
+
   btn.on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
   });
 });
 
-// option select ayarları
+
+
+
+
+
+//form option select ayarları
 document.form.hizmet.onchange = function(){
   if(this.value=="1")  
     document.querySelector(".asansorr").classList.remove("d-none") 

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/section_form.css">
     <link rel="stylesheet" href="css/section_asansor.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,6 +33,25 @@
 <body>
     <!-- Navigasyon barı -->
     <header>
+        <div class="secret_navbar d-none ">
+            <ul class="navbar2">
+                <li class="nav-item2">
+                    <a class="nav-link2 " href="index.html"><img src="img/logo.png" alt=""></a>
+                </li>
+                <li class="nav-item2">
+                <a class="nav-link2" id="5" onClick="add2(this.id)" href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-item2">
+                <a class="nav-link2" id="6" onClick="add2(this.id)" href="">Hizmetlerimiz</a>
+                </li>
+                <li class="nav-item2">
+                <a class="nav-link2" id="7" onClick="add2(this.id)">Hakkımızda</a>
+                </li>                            
+                <li class="nav-item2">
+                    <a class="nav-link2" id="8" onClick="add2(this.id)" href="bize-ulasin.html">Bize Ulaşın</a>
+                </li>                         
+            </ul>
+        </div>
         <div class="header-top">
             <div class="container d-flex align-items-center justify-content-end">            
                 <div class="phone-mail">
@@ -88,19 +108,10 @@
     </header>
 
     <!-- Eğitimlerimiz açılır kapanır sekme -->
-    <section class="d-flex align-items-start justify-content-evenly d-none" id="egitim">
-        <div class="asansor">
-            <h4><a href="#asansor" class="btn btn-primary">Asansör Avan Proje Çizimleri</a></h4>
-            <p>Gebze, Darıca, Çayırova Belediyeleri Başta Olmak Üzere Asansör Avan Proje Çizim Hizmetleri</p>
-            <ul>
-                <li>Hızlı ve Başarılı Proje Tasarımları</li>
-                <li>İlgili Belediyeye Uygun Projeler</li>
-                <li>Proje Onay Takibi</li>
-                
-            </ul>
-        </div>
+    <section class="d-flex align-items-start justify-content-center d-none" id="egitim">
+        
         <div class="webtasarım">
-            <h4><a href="#website" class="btn btn-primary">Kurumsal Web Sitesi Çözümleri</a></h4>
+            <h3><a href="#website" class="btn btn-outline-primary">Kurumsal Web Sitesi Çözümleri</a></h3>
             <p>Anahtar Teslim Kurumsal Web Siteniz İle Şirketinizi Daha Çok Müşteriye Ulaştırın.</p>
             <ul>
                 <li>Yüz Yüze veya Online Olarak Yapacağımız Görüşmeler ile Web Sitesi Genel Planını Belirliyoruz.</li>
@@ -108,117 +119,61 @@
                 <li>Web Sitemiz Sizlere Sunuma ve Yayına Hazırdır.</li>
             </ul>
         </div>
+        
+        <div class="domain">
+            <h3><a href="#domain" class="btn btn-outline-primary">Domain</a></h3>
+            <ul>
+                <li>Domain Nedir ?</li>
+                <li>Domain Nasıl Alınır ?</li>
+                <li>Domain Alırken Nelere Dikkat Edilmelidir ?</li>                
+            </ul>
+        </div>
+
+        <div class="hosting">
+            <h3><a href="#hosting" class="btn btn-outline-primary">Hosting</a></h3>
+            <ul>
+                <li>Hosting Nedir ?</li>
+                <li>Hosting Nasıl Alınır ?</li>
+                <li>Hosting Sçerken Nelere Dikkat Edilmelidir ?</li>                
+            </ul>
+        </div>
         <div class="seo">
-            <h4><a href="" class="btn btn-primary">S.E.O Hizmeti</a></h4>
-            <p>Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun. Doğru Adımları Atarak Sitenizi Arama Motorlorunda Üst Sıralara Taşımayı Hedefliyoruz.</p>
+            <h3><a href="#seo" class="btn btn-outline-primary">S.E.O Hizmeti</a></h3>
+            <ul>
+                <li>Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun.</li>
+                <li>Doğru Adımları Atarak Sitenizi Arama Motorlorunda Üst Sıralara Taşımayı Hedefliyoruz</li>
+            </ul>
         </div>
     </section>
 
     <!-- Yukarı Çık Butonu -->  
     <button class="up border-0 fs-1 d-none"><i class="fa-solid fa-circle-arrow-up fa-bounce"></i></button>
 
-    <main class="main">
-        
-            <div class="animation_text ps-2">
-                <h2>
-                  <span class="typewrite" data-period="2000" data-words='[ " Deneyimli Mühendis Kadromuz İle Asansör Avan Projesi Konusunda Hızlı ve Başarılı Çözümler İle Memnuniyet Garantisi", "Kurumsal Web Sitesi Tasarımları İle Şirketinizi Dijital Dünya İle Tanıştırıyoruz. ", " 10 Yılı Aşkın Sektör Tecrübemiz Sayesinde Her Geçen Gün Başarılarımızı Daha İleri Seviyelere Taşımaya Devam Ediyoruz."]'></span>     </h2>                
-            </div>
-            <div class="animation_btn ps-2">
-                <div data-aos="fade-left"  
-                    data-aos-delay="2800" class="text-white ps-2 mt-3">
-                    
-                </div>  
-                <div data-aos="fade-left"  
-                    data-aos-delay="2000">
-                    <button class="btn getInfo"><a class="text-decoration-none text-white" href="tel:05315400826">Asansör Avan Projesi İçin Tıklayınız...</a></button>
-                </div>
-                <div data-aos="fade-left" class="mt-2"  
-                    data-aos-delay="3000">
-                    <button class="btn getInfo"><a class="text-decoration-none text-white" href="tel:05315400826">Kurumsal Web Sitesi Tasarımı İçin Tıklayınız...</a></button>
-                </div>
-            </div>
-            <!-- Ana ekran sağ taraf resim -->
-            <div class="logo">
-                <img src="img/pngwing.com.png" width="400px" alt="">
-            </div>
-            
-
-        
-
-        <!-- <div class="owl">
-            <div class="owl-carousel  container">
-                <div class="ikon1"><a href="" ><img src="img/sertifika1.png" alt=""></a></div>
-                <div class="ikon2"><a href="" ><img src="img/sertifika2.jpeg" alt=""></a></div>
-                <div class="ikon3"><a href="" ><img src="img/sertifika3.png" alt=""></a></div>
-                <div class="ikon4"><a href="" ><img src="img/sertifika4.jpeg" alt=""></a></div>
-                <div class="ikon5"><a href="" ><img src="img/sertifika5.png" alt=""></a></div>                    
-            </div>
-        </div>   -->
-    </main> 
-  
-
-    <section id="asansor" class="container mt-5"> 
-        <div class="text-center">
-            <h1 class="btn btn-secondary">Asansör Proje Hizmetleri</h1>
-        </div> 
-        
-        <div class="asansor_price">
-            <h5 class="btn btn-danger"><a href="tel:05315400826" class="text-decoration-none text-white">1000 TL'den Başlayan Fiyatlarla...</a></h5>
+    <main class="main">        
+        <div class="animation_text ps-2">
+            <h2>
+                <span class="typewrite" data-period="2000" data-words='[ "Kurumsal Web Sitesi Tasarımları İle Şirketinizi Dijital Dünya İle Tanıştırıyoruz. ", " SEO Hizmeti İle Kurumsal Sitenizi Daha Fazla Ulaşılabilir Hale Getiriyoruz.", "Kurumsal Mail Adresi İle Şirketinize Daha Profesyonel Bir İmaj Sağlıyarak Müşterilerin Güvenini Kazanıyoruz. ", " 10 Yılı Aşkın Sektör Tecrübemiz Sayesinde Her Geçen Gün Başarılarımızı Daha İleri Seviyelere Taşımaya Devam Ediyoruz."]'></span>     </h2>                
         </div>
-             
-        <div class="card mb-3">
-            <div class="row g-0">              
-              <div class="col-md-8 order-1">
-                <div class="card-body">
-                  <h5 class="card-title">Asansör Proje Hizmetleri</h5>
-                  <p class="card-text"><b>Gebze, Darıca ve Çayırova Bölgelerinde Aynı Gün Teslim Asansör Avan Projeleri Hizmeti Vermekteyiz.</b></p>
-                  <div>
-                    <ul>
-                        <li>
-                            <p>Gebze belediyesi projeleri gebze belediyesinin yapmış olduğu e-belediye sisteminden yüklenmektedir.</p>
-                            <p>Teslim Edilmesi Gereken Evraklar (Mail Yoluyla)</p>
-                            <ul>
-                                <li>Onaylı Mimari Proje</li>
-                                <li>Proje Kontrol Formu (Yapı Denetim Firmalarından Temin Edilecek)</li>
-                                <li>Yapı Denetim Denetçi T.C Kimlik Numaraları (Elektrik ve Mekanik)</li>
-                                <li>Müteahhit ve Mal Sahibi İsim Soyisim ve Telefon Numaraları</li>
-                            </ul>
-                        </li>
-                      </ul>
-                  </div>                  
-                  <hr>
-                  <div>
-                    <ul>
-                        <li>
-                            <p>Çayırova belediyesi projeleri öncelikle avan proje dosyası hazırlanarak belediyeye teslim edilir. Daha sonra mail yoluyla proje onaylatıldıktan sonra ozalit çıktısı alınarak mimara teslim edilir.</p>
-                            <p>Teslim Edilmesi Gereken Evraklar (Mail Yoluyla)</p>
-                            <ul>
-                                <li>Onaylı Mimari Proje</li>
-                                <li>Asansör Avan Projesi Hizmet Sözleşmesi (Bizim Tarafımızdan Hazırlanacak)</li>                            
-                            </ul>
-                        </li>
-                      </ul>
-                  </div>
-                  <hr>
-                  <div>
-                    <ul>
-                        <li>
-                            <p>Darıca belediyesi projeleri çizildikten sonra ozalit çıktısı alınarak belediyenin istemiş olduğu evraklar ile birlikte mimara teslim edilir.</p>
-                            <p>Teslim Edilmesi Gereken Evraklar (Mail Yoluyla)</p>
-                            <ul>
-                                <li>Onaylı Mimari Proje</li>                                                            
-                            </ul>
-                        </li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 order-2">
-                <img src="img/project.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
+        <div class="animation_btn ps-2">
+            <div data-aos="fade-left"  
+                data-aos-delay="2800" class="text-white ps-2 mt-3">
+                
+            </div>  
+            <div data-aos="fade-left"  
+                data-aos-delay="2000">
+                <a class="text-decoration-none text-white fs-5" >Fırsatları Kaçırmayın Kurumsal Web Sitenizi Bize Yaptırın</a>
             </div>
-          </div>
-    </section>
+            <div data-aos="fade-left" class="mt-2"  
+                data-aos-delay="3000">
+                <button class="btn getInfo"><a class="text-decoration-none text-white" href="tel:05315400826">Daha Fazla Bilgi İçin Tıklayınız...</a></button>
+            </div>
+        </div>
+        <!-- Ana ekran sağ taraf resim -->
+        <div class="logo">
+            <img src="img/pngwing.com.png" width="400px" alt="">
+        </div>    
+    </main> 
+      
 
     <section id="website" class="container mt-5">
         <div class="text-center">
@@ -279,10 +234,10 @@
                             <p>Domain ve Hosting Hizmetleri Fiyata Dahil Değildir.2023 Yılı İçerisind Ortalama Domain ve Hosting İşlemleri 1000-1500 TL Civarındadır.(Yıllık Olarak Yenilenmesi Gerekir.)  <p>                            
                         </li>
                         <ul>
-                            <li>Domain Nedir ?
+                            <li  id="domain">Domain Nedir ?
                                 <p>Domain bir web sitesinin adresini belirleyen, internette benzersiz bir kimlik numarasıdır. Örneğin, Google'ın alan adı "google.com" dur. Bir domain adı, bir ana bilgisayarda veya sunucuda barındırılan bir web sitesinin adıdır ve bu nedenle internet kullanıcıları tarafından tarayıcıda girilebilir.</p>
                             </li>
-                            <li>Hosting Nedir ?
+                            <li  id="hosting">Hosting Nedir ?
                                 <p>Hosting bir web sitesinin internet üzerinde yayınlanması için gerekli olan hizmetleri sağlayan bir hizmettir. Web sitesi dosyalarının saklanması, sunuculara yüklenmesi ve internete bağlanması için gerekli altyapıyı sağlar. Hosting hizmetleri, genellikle bir sunucu üzerinde barındırılan bir dizi web sitesi için paylaşılan veya özel olarak kiralanmış sunucular olarak sunulur.</p>
                             </li>
                         </ul>
@@ -296,9 +251,80 @@
           </div>
     </section>
 
-    <section id="seo">
-
+    <section id="seo" class="container mt-5">
+    
+        <div class="text-center">
+            <h1 class="btn btn-secondary">S.E.O Hizmetleri</h1>
+        </div> 
+           
+    
+        <div class="card mb-3">
+            <div class="row g-0">
+              
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">S.E.O Hizmetleri </h5>
+                  <p class="card-text"><b>Kurumsal Web Sitenize S.E.O(Arama Motoru Optimizasyonu) Yapılarak Google'da Üst Sıralara Taşıyoruz.</b></p>
+                  
+                  
+                  <div>
+                    <ul>
+                        <li>
+                            SEO (Arama Motoru Optimizasyonu) hizmeti, bir web sitesinin arama motorları tarafından daha iyi anlaşılmasını ve daha yüksek sıralarda görünmesini sağlamak için yapılan çalışmalardır. Bu çalışmalar, web sitesinin içeriği, tasarımı ve kodlaması gibi faktörleri optimize etmeyi ve arama motorları algoritmaları tarafından daha fazla dikkate alınmasını sağlamayı amaçlar.
+                        </li>
+                        <li>
+                            SEO hizmeti genellikle anahtar kelime araştırması, meta etiketlerinin optimize edilmesi, web sitesi içi ve dışı bağlantıların yönetimi, site haritası oluşturma, içerik stratejisi geliştirme ve analiz gibi işlemleri içerir.
+                        </li>
+                        <li>
+                            SEO hizmetleri, bir web sitesinin organik arama sonuçlarında daha üst sıralarda yer almasını sağlayarak, web sitesinin trafik ve görünürlüğünü artırır. Bu nedenle, bir web sitesi sahibi olarak SEO hizmetlerinden yararlanarak, hedef kitlenizin web sitenizi bulması için daha iyi bir şans elde edebilirsiniz.
+                        </li>
+                      </ul>
+                  </div>   
+                </div>
+              </div>
+    
+              <div class="col-md-5">
+                <img src="img/seo2.jpg" class="img-fluid rounded-start mt-1 ps-1" alt="...">           
+              </div>
+    
+            </div>
+          </div>
     </section>
+
+
+
+    <footer class="footer mt-5 bg-dark">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                
+                <div class="col-md-8 d-flex align-items-center justify-content-evenly">
+                    <div>
+                        <a href="index.html">Arem Yazılım</a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Anasayfa</a></li>
+                            <li><a href="index.html#body">Hizmetlerimiz</a></li>
+                            <li><a href="">Hakkımızda</a></li>
+                            <li><a href="asansor-avan.html">Asansör Avan Projesi</a></li>
+                            <li><a href="bize-ulasin.html">Bize Ulaşın</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 text-center">
+                    <ul>
+                        <li><a href="tel:05315400826" class="pe-3"><i class="fa-solid fa-phone pe-2"></i>+90 531 540 0826</a></li>
+                        <li><a href="mailto:info@aremyazilim.com"><i class="fa-solid fa-at pe-2"></i>info@aremyazilim.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="text-center p-2 footer-bottom">
+        <a class="m-0 text-white text-decoration-none" href="" >@2022 Arem Yazılım. Tüm Hakları Saklıdır.</a>
+    </div>
 
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>

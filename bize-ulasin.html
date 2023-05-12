@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/section_form.css">
     <link rel="stylesheet" href="css/section_asansor.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -88,19 +89,10 @@
     </header>
 
      <!-- Eğitimlerimiz açılır kapanır sekme -->
-     <section class="d-flex align-items-start justify-content-evenly d-none" id="egitim">
-        <div class="asansor">
-            <h4><a href="index.html#asansor" class="btn btn-primary">Asansör Avan Proje Çizimleri</a></h4>
-            <p>Gebze, Darıca, Çayırova Belediyeleri Başta Olmak Üzere Asansör Avan Proje Çizim Hizmetleri</p>
-            <ul>
-                <li>Hızlı ve Başarılı Proje Tasarımları</li>
-                <li>İlgili Belediyeye Uygun Projeler</li>
-                <li>Proje Onay Takibi</li>
-                
-            </ul>
-        </div>
+     <section class="d-flex align-items-start justify-content-center d-none" id="egitim">
+        
         <div class="webtasarım">
-            <h4><a href="index.html#website" class="btn btn-primary">Kurumsal Web Sitesi Çözümleri</a></h4>
+            <h3><a href="index.html#website" class="btn btn-outline-primary">Kurumsal Web Sitesi Çözümleri</a></h3>
             <p>Anahtar Teslim Kurumsal Web Siteniz İle Şirketinizi Daha Çok Müşteriye Ulaştırın.</p>
             <ul>
                 <li>Yüz Yüze veya Online Olarak Yapacağımız Görüşmeler ile Web Sitesi Genel Planını Belirliyoruz.</li>
@@ -108,9 +100,30 @@
                 <li>Web Sitemiz Sizlere Sunuma ve Yayına Hazırdır.</li>
             </ul>
         </div>
+        
+        <div class="domain">
+            <h3><a href="index.html#domain" class="btn btn-outline-primary">Domain</a></h3>
+            <ul>
+                <li>Domain Nedir ?</li>
+                <li>Domain Nasıl Alınır ?</li>
+                <li>Domain Alırken Nelere Dikkat Edilmelidir ?</li>                
+            </ul>
+        </div>
+
+        <div class="hosting">
+            <h3><a href="index.html#hosting" class="btn btn-outline-primary">Hosting</a></h3>
+            <ul>
+                <li>Hosting Nedir ?</li>
+                <li>Hosting Nasıl Alınır ?</li>
+                <li>Hosting Sçerken Nelere Dikkat Edilmelidir ?</li>                
+            </ul>
+        </div>
         <div class="seo">
-            <h4><a href="" class="btn btn-primary">S.E.O Hizmeti</a></h4>
-            <p>Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun. Doğru Adımları Atarak Sitenizi Arama Motorlorunda Üst Sıralara Taşımayı Hedefliyoruz.</p>
+            <h3><a href="index.html#seo" class="btn btn-outline-primary">S.E.O Hizmeti</a></h3>
+            <ul>
+                <li>Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun.</li>
+                <li>Doğru Adımları Atarak Sitenizi Arama Motorlorunda Üst Sıralara Taşımayı Hedefliyoruz</li>
+            </ul>
         </div>
     </section>
 
@@ -162,6 +175,79 @@
             </div>
         </form>
     </section>
+
+     <!-- Yukarı Çık Butonu -->  
+     <button class="up border-0 fs-1 d-none"><i class="fa-solid fa-circle-arrow-up fa-bounce"></i></button>
+
+    <footer class="footer mt-5 bg-dark">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                
+                <div class="col-md-8 d-flex align-items-center justify-content-evenly">
+                    <div>
+                        <a href="index.html">Arem Yazılım</a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Anasayfa</a></li>
+                            <li><a href="index.html#body">Hizmetlerimiz</a></li>
+                            <li><a href="">Hakkımızda</a></li>
+                            <li><a href="asansor-avan.html">Asansör Avan Projesi</a></li>
+                            <li><a href="bize-ulasin.html">Bize Ulaşın</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 text-center">
+                    <ul>
+                        <li><a href="tel:05315400826" class="pe-3"><i class="fa-solid fa-phone pe-2"></i>+90 531 540 0826</a></li>
+                        <li><a href="mailto:info@aremyazilim.com"><i class="fa-solid fa-at pe-2"></i>info@aremyazilim.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="text-center p-2 footer-bottom">
+        <a class="m-0 text-white text-decoration-none" href="" >@2022 Arem Yazılım. Tüm Hakları Saklıdır.</a>
+    </div>
+
+
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+    /* paste this line in verbatim */
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    /* customize formbutton below*/     
+    formbutton("create", {
+        action: "https://formspree.io/f/mgebddqo",
+        title: "Size Nasıl Yardımcı Olabilirim ?",
+        fields: [
+        { 
+            type: "email", 
+            label: "E-mail:", 
+            name: "email",
+            required: true,
+            placeholder: "abc@email.com"
+        },
+        {
+            type: "textarea",
+            label: "Mesaj:",
+            name: "message",
+            placeholder: "Mesajınızı Yazınız",
+        },
+        { type: "submit" }      
+        ],
+        styles: {
+        title: {
+            backgroundColor: "red"
+        },
+        button: {
+            backgroundColor: "red"
+        }
+        }
+    });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>    
     <script src="js/bootstrap.bundle.min.js"></script>

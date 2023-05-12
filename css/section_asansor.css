@@ -1,3 +1,5 @@
+
+/* asansor sayfası */
 #asansor{
     position: relative;
 }
@@ -14,6 +16,8 @@
     z-index: 500;
 }
 
+
+/* website sayfası */
 #website{
     position: relative;
 }
@@ -21,12 +25,12 @@
     font-size: 25px;   
 }
 #website img{
-    height: 48%;
+    height: auto;
     width: 100%;
 }
 .website_price{
     position: absolute;
-    top: 7%;
+    top:8%;
     left: 2%;
     z-index: 500;
 }
@@ -37,7 +41,19 @@
     left: 2%;
     z-index: 500;
 }
-
+.card{
+    border: none;
+}
 .card-body{
     padding-right: 0;
+}
+
+
+/* seo sayfası */
+#seo h1{
+    font-size: 25px;
+}
+#seo img{
+    width: 100%;
+    height: auto;
 }

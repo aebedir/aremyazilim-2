@@ -87,6 +87,10 @@
         top: 4%;
         left: 3%;        
     }  
+    .secret_navbar{
+        display: none !important;
+    }
+   
 }
 
 @media screen and (max-width:426px) {
@@ -154,5 +158,8 @@
     }
     .card-body{
         padding-right: 5px;
+    }
+    .up{
+        font-size: 40px !important;
     }
 }
